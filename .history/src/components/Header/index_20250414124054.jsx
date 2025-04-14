@@ -18,7 +18,7 @@ const Header = () =>{
                         <spam className="ml-2">e.com</spam>
                         </Link>
                     </div>
-                    <div className="col-sm-1 d-flex align-items-center pl-4">
+                    <div className="col-xs-2 d-flex align-items-center pl-4">
                     <Button className="rounded-circle"><MdMenuOpen/></Button>
                     </div>
                     <div>

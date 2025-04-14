@@ -12,10 +12,10 @@ header{
   background-color:#abe9d9;
 }
 header .logo{
+  padding: 2px;
   text-decoration: none;
 }
 header .logo img{
-  margin-top: 10px;
   width:45px;
 
 }
