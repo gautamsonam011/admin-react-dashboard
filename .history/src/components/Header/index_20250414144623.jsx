@@ -3,36 +3,33 @@ import { Link } from "react-router-dom";
 import logo from "../../assests/images/logo.jpg";
 import Button from '@mui/material/Button';
 import { MdMenuOpen } from "react-icons/md";
-// import { MdOutlineMenu } from "react-icons/md";
+import { MdOutlineMenu } from "react-icons/md";
 import SearchBox from "../SearchBox";
 import { MdOutlineLightMode } from "react-icons/md";
-// import { MdDarkMode } from "react-icons/md";
+import { MdDarkMode } from "react-icons/md";
 import { FaCartShopping } from "react-icons/fa6";
 import { MdMarkEmailRead } from "react-icons/md";
 import { FaRegBell } from "react-icons/fa";
 
-
+import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import Divider from '@mui/material/Divider';
-import { FaShieldAlt } from "react-icons/fa";
+import IconButton from '@mui/material/IconButton';
+import Typography from '@mui/material/Typography';
+import Tooltip from '@mui/material/Tooltip';
+import PersonAdd from '@mui/icons-material/PersonAdd';
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
 
 const Header = () => {
-    const [anchorEl, setAnchorEl] = useState(null);
+    const [anchorEl, setAnchorEl] = React.useState < null | HTMLElement > (null);
     const open = Boolean(anchorEl);
-   
-    const handleOpenMyAccountDropdown = (event) => {
-        if (anchorEl) {
-            setAnchorEl(null); 
-        } else {
-            setAnchorEl(event.currentTarget); 
-        }
+    const handleOpenMyAccountDropdown = (event: React.MouseEvent<HTMLElement>) => {
+        setAnchorEl(event.currentTarget);
     };
-
     const handleOpenMyAccountDropdownClose = () => {
         setAnchorEl(null);
     };
@@ -112,12 +109,15 @@ const Header = () => {
                                         <MenuItem onClick={handleOpenMyAccountDropdownClose}>
                                             <Avatar /> Profile
                                         </MenuItem>
+                                        <MenuItem onClick={handleOpenMyAccountDropdownClose}>
+                                            <Avatar /> My account
+                                        </MenuItem>
                                         <Divider />
                                         <MenuItem onClick={handleOpenMyAccountDropdownClose}>
                                             <ListItemIcon>
-                                                <FaShieldAlt fontSize="small" />
+                                                <PersonAdd fontSize="small" />
                                             </ListItemIcon>
-                                            Reset Password
+                                            Add another account
                                         </MenuItem>
                                         <MenuItem onClick={handleOpenMyAccountDropdownClose}>
                                             <ListItemIcon>

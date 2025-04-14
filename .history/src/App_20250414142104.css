@@ -27,7 +27,7 @@ font-size: 24px;
 }
 header button.rounded-circle{min-width:40px !important; width:40px !important; height: 40px !important; background-color:#0ff7d8 !important; margin: 15px;}
 header button.rounded-circle svg{color:rgb(29, 27, 27); font-size: 25px !important; transition: all 0.2s ease-in-out;}
-header button.rounded-circle:hover svg{color: #2585d4 !important;}
+header button.rounded-circle:hover{color: #0ff7d8 !important;}
 .searchBox{width:400px; height: 40px; background-color:#faf9f9; border-radius: 6px;padding: 3px 15px;}
 .searchBox input{background: transparent;border:0px; outline:none; padding-left: 5px; font-size: 15px; color:#292929}
 .searchBox input::-webkit-input-placeholder{color:#292929}

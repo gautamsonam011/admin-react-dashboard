@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import logo from "../../assests/images/logo.jpg";
 import Button from '@mui/material/Button';
 import { MdMenuOpen } from "react-icons/md";
-// import { MdOutlineMenu } from "react-icons/md";
+import { MdOutlineMenu } from "react-icons/md";
 import SearchBox from "../SearchBox";
 import { MdOutlineLightMode } from "react-icons/md";
-// import { MdDarkMode } from "react-icons/md";
+import { MdDarkMode } from "react-icons/md";
 import { FaCartShopping } from "react-icons/fa6";
 import { MdMarkEmailRead } from "react-icons/md";
 import { FaRegBell } from "react-icons/fa";
@@ -17,20 +17,15 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import Divider from '@mui/material/Divider';
-import { FaShieldAlt } from "react-icons/fa";
+import PersonAdd from '@mui/icons-material/PersonAdd';
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
 
 const Header = () => {
-    const [anchorEl, setAnchorEl] = useState(null);
+    const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
-   
     const handleOpenMyAccountDropdown = (event) => {
-        if (anchorEl) {
-            setAnchorEl(null); 
-        } else {
-            setAnchorEl(event.currentTarget); 
-        }
+        setAnchorEl(event.currentTarget);
     };
 
     const handleOpenMyAccountDropdownClose = () => {
@@ -115,7 +110,7 @@ const Header = () => {
                                         <Divider />
                                         <MenuItem onClick={handleOpenMyAccountDropdownClose}>
                                             <ListItemIcon>
-                                                <FaShieldAlt fontSize="small" />
+                                                <PersonAdd fontSize="small" />
                                             </ListItemIcon>
                                             Reset Password
                                         </MenuItem>

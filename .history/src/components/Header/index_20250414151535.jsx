@@ -24,18 +24,29 @@ import Logout from '@mui/icons-material/Logout';
 const Header = () => {
     const [anchorEl, setAnchorEl] = useState(null);
     const open = Boolean(anchorEl);
-   
+
+    // ✅ Toggle handler
     const handleOpenMyAccountDropdown = (event) => {
         if (anchorEl) {
-            setAnchorEl(null); 
+            setAnchorEl(null); // Close dropdown
         } else {
-            setAnchorEl(event.currentTarget); 
+            setAnchorEl(event.currentTarget); // Open dropdown
         }
     };
 
     const handleOpenMyAccountDropdownClose = () => {
         setAnchorEl(null);
     };
+
+    // const [anchorEl, setAnchorEl] = React.useState(null);
+    // const open = Boolean(anchorEl);
+    // const handleOpenMyAccountDropdown = (event) => {
+    //     setAnchorEl(event.currentTarget);
+    // };
+
+    // const handleOpenMyAccountDropdownClose = () => {
+    //     setAnchorEl(null);
+    // };
 
 
     return (
