@@ -104,40 +104,10 @@ const Header = () => {
                                 anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
                             >
                                 <MenuItem onClick={handleClosenotificationsDrop}>
-                                    Orders(12)
-                                </MenuItem>
-                                <Divider className="mb-2" />
-                                <MenuItem onClick={handleClosenotificationsDrop}>
-                                    <div className="d-flex align-items-center dropdown-list">
-                                     
-                                        <div className="userImg">
-                                        <span className="rounded-circle">
-                                            <img src={logo} alt="profile" />
-                                        </span>
-
-                                    </div>
-                                    <div className='dropdown-info'>
-                                        <h4><b>Sona</b> added Leather New Shoes</h4>
-                                        <p>Few minutes ago</p>
-                                    </div>
-                                    </div>
-                                   
+                                    You have a new message
                                 </MenuItem>
                                 <MenuItem onClick={handleClosenotificationsDrop}>
-                                    <div className="d-flex align-items-center dropdown-list">
-                                     
-                                        <div className="userImg">
-                                        <span className="rounded-circle">
-                                            <img src={logo} alt="profile" />
-                                        </span>
-
-                                    </div>
-                                    <div className='dropdown-info'>
-                                        <h4><b>Sona</b> added Leather New Shoes</h4>
-                                        <p>Few minutes ago</p>
-                                    </div>
-                                    </div>
-                                   
+                                    Your order has been shipped
                                 </MenuItem>
                             </Menu>
 

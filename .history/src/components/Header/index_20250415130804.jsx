@@ -109,8 +109,7 @@ const Header = () => {
                                 <Divider className="mb-2" />
                                 <MenuItem onClick={handleClosenotificationsDrop}>
                                     <div className="d-flex align-items-center dropdown-list">
-                                     
-                                        <div className="userImg">
+                                    <div className="userImg">
                                         <span className="rounded-circle">
                                             <img src={logo} alt="profile" />
                                         </span>
@@ -121,23 +120,6 @@ const Header = () => {
                                         <p>Few minutes ago</p>
                                     </div>
                                     </div>
-                                   
-                                </MenuItem>
-                                <MenuItem onClick={handleClosenotificationsDrop}>
-                                    <div className="d-flex align-items-center dropdown-list">
-                                     
-                                        <div className="userImg">
-                                        <span className="rounded-circle">
-                                            <img src={logo} alt="profile" />
-                                        </span>
-
-                                    </div>
-                                    <div className='dropdown-info'>
-                                        <h4><b>Sona</b> added Leather New Shoes</h4>
-                                        <p>Few minutes ago</p>
-                                    </div>
-                                    </div>
-                                   
                                 </MenuItem>
                             </Menu>
 

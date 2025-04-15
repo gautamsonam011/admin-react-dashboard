@@ -14,12 +14,10 @@ function App() {
         <Sidebar/>
       </div>
     </div>
-    <div className='content'>
+
     <Routes>
       <Route path = "/" exact={true} element={<Dashboard/>} />
     </Routes>
-    </div>
-    
     </BrowserRouter>
   );
 }

@@ -108,8 +108,8 @@ const Header = () => {
                                 </MenuItem>
                                 <Divider className="mb-2" />
                                 <MenuItem onClick={handleClosenotificationsDrop}>
-                                    <div className="d-flex align-items-center dropdown-list">
-                                     
+                                    <ul className="d-flex align-items-center dropdown-list">
+                                        <li>
                                         <div className="userImg">
                                         <span className="rounded-circle">
                                             <img src={logo} alt="profile" />
@@ -120,12 +120,8 @@ const Header = () => {
                                         <h4><b>Sona</b> added Leather New Shoes</h4>
                                         <p>Few minutes ago</p>
                                     </div>
-                                    </div>
-                                   
-                                </MenuItem>
-                                <MenuItem onClick={handleClosenotificationsDrop}>
-                                    <div className="d-flex align-items-center dropdown-list">
-                                     
+                                        </li>
+                                        <li>
                                         <div className="userImg">
                                         <span className="rounded-circle">
                                             <img src={logo} alt="profile" />
@@ -136,8 +132,9 @@ const Header = () => {
                                         <h4><b>Sona</b> added Leather New Shoes</h4>
                                         <p>Few minutes ago</p>
                                     </div>
-                                    </div>
-                                   
+                                        </li>
+                                    
+                                    </ul>
                                 </MenuItem>
                             </Menu>
 

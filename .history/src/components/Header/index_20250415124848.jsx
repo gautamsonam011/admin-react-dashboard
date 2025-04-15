@@ -26,12 +26,12 @@ const Header = () => {
     const [anchorElNotification, setAnchorElNotification] = useState(null);
 
     const open = Boolean(anchorEl);
-
+   
     const handleOpenMyAccountDropdown = (event) => {
         if (anchorEl) {
-            setAnchorEl(null);
+            setAnchorEl(null); 
         } else {
-            setAnchorEl(event.currentTarget);
+            setAnchorEl(event.currentTarget); 
         }
     };
 
@@ -40,15 +40,15 @@ const Header = () => {
     };
 
     // For Notification dropdown
-    const handleOpennotificationsDrop = (event) => {
-        setAnchorElNotification(event.currentTarget);
-    };
+const handleOpennotificationsDrop = (event) => {
+    setAnchorElNotification(event.currentTarget);
+};
 
-    const handleClosenotificationsDrop = () => {
-        setAnchorElNotification(null);
-    };
+const handleClosenotificationsDrop = () => {
+    setAnchorElNotification(null);
+};
 
-
+   
 
     return (
         <>
@@ -70,76 +70,60 @@ const Header = () => {
                             <Button className="rounded-circle"><MdOutlineLightMode /></Button>
                             <Button className="rounded-circle"><FaCartShopping /></Button>
                             <Button className="rounded-circle"><MdMarkEmailRead /></Button>
-                            <Button className="rounded-circle" onClick={handleOpennotificationsDrop}>
-                                <FaRegBell />
-                            </Button>
+                            <Button className="rounded-circle" onClick={handleOpennotificationsDrop}><FaRegBell />
                             <Menu
-                                anchorEl={anchorElNotification}
-                                open={Boolean(anchorElNotification)}
-                                onClose={handleClosenotificationsDrop}
-                                onClick={handleClosenotificationsDrop}
-                                slotProps={{
-                                    paper: {
-                                        elevation: 0,
-                                        sx: {
-                                            overflow: 'visible',
-                                            filter: 'drop-shadow(0px 2px 8px rgba(0,0,0,0.32))',
-                                            mt: 1.5,
-                                            '&::before': {
-                                                content: '""',
-                                                display: 'block',
-                                                position: 'absolute',
-                                                top: 0,
-                                                right: 14,
-                                                width: 10,
-                                                height: 10,
-                                                bgcolor: 'background.paper',
-                                                transform: 'translateY(-50%) rotate(45deg)',
-                                                zIndex: 0,
+                                        anchorEl={anchorEl}
+                                        id="account-menu"
+                                        open={open}
+                                        onClose={handleClosenotificationsDrop}
+                                        onClick={handleClosenotificationsDrop}
+                                        slotProps={{
+                                            paper: {
+                                                elevation: 0,
+                                                sx: {
+                                                    overflow: 'visible',
+                                                    filter: 'drop-shadow(0px 2px 8px rgba(0,0,0,0.32))',
+                                                    mt: 1.5,
+                                                    '& .MuiAvatar-root': {
+                                                        width: 32,
+                                                        height: 32,
+                                                        ml: -0.5,
+                                                        mr: 1,
+                                                    },
+                                                    '&::before': {
+                                                        content: '""',
+                                                        display: 'block',
+                                                        position: 'absolute',
+                                                        top: 0,
+                                                        right: 14,
+                                                        width: 10,
+                                                        height: 10,
+                                                        bgcolor: 'background.paper',
+                                                        transform: 'translateY(-50%) rotate(45deg)',
+                                                        zIndex: 0,
+                                                    },
+                                                },
                                             },
-                                        },
-                                    },
-                                }}
-                                transformOrigin={{ horizontal: 'right', vertical: 'top' }}
-                                anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
-                            >
-                                <MenuItem onClick={handleClosenotificationsDrop}>
-                                    Orders(12)
-                                </MenuItem>
-                                <Divider className="mb-2" />
-                                <MenuItem onClick={handleClosenotificationsDrop}>
-                                    <div className="d-flex align-items-center dropdown-list">
-                                     
-                                        <div className="userImg">
-                                        <span className="rounded-circle">
-                                            <img src={logo} alt="profile" />
-                                        </span>
-
-                                    </div>
-                                    <div className='dropdown-info'>
-                                        <h4><b>Sona</b> added Leather New Shoes</h4>
-                                        <p>Few minutes ago</p>
-                                    </div>
-                                    </div>
-                                   
-                                </MenuItem>
-                                <MenuItem onClick={handleClosenotificationsDrop}>
-                                    <div className="d-flex align-items-center dropdown-list">
-                                     
-                                        <div className="userImg">
-                                        <span className="rounded-circle">
-                                            <img src={logo} alt="profile" />
-                                        </span>
-
-                                    </div>
-                                    <div className='dropdown-info'>
-                                        <h4><b>Sona</b> added Leather New Shoes</h4>
-                                        <p>Few minutes ago</p>
-                                    </div>
-                                    </div>
-                                   
-                                </MenuItem>
-                            </Menu>
+                                        }}
+                                        transformOrigin={{ horizontal: 'right', vertical: 'top' }}
+                                        anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
+                                    >
+                                        <Divider />
+                                        <MenuItem onClick={handleClosenotificationsDrop}>
+                                            <ListItemIcon>
+                                                <FaShieldAlt fontSize="small" />
+                                            </ListItemIcon>
+                                            Reset Password
+                                        </MenuItem>
+                                        <MenuItem onClick={handleClosenotificationsDrop}>
+                                            <ListItemIcon>
+                                                <Settings fontSize="small" />
+                                            </ListItemIcon>
+                                            Settings
+                                        </MenuItem>
+                                        
+                                    </Menu>
+                            </Button>
 
                             <div className="myAccountWrapper">
                                 <Button className="myAccount d-flex align-items-center" onClick={handleOpenMyAccountDropdown}>
