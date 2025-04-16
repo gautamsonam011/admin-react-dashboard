@@ -106,4 +106,4 @@ position:relative; overflow:hidden;}
 .dashboardBoxWrapper .dashboardBox button.toggleIcon {font-size: 22px; color:rgba(0,0,0,0.5); cursor: pointer; min-width: 40px !important; width: 40px !important; height: 40px !important; border-radius: 50% !important;}
 
 .dashboardBoxWrapperRow .dashboardBoxWrapper .dashboardBox .chart{position:absolute; opacity: 0.1;}
-.dashboardBoxWrapperRow .dashboardBoxWrapper .dashboardBox .chart svg{font-size: 150px; color: #000;}
+.dashboardBoxWrapperRow .dashboardBoxWrapper .dashboardBox .chart svg{font-size: 110px; color: #000;}

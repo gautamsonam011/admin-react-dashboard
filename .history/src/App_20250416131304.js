@@ -8,18 +8,18 @@ import Sidebar from './components/Sidebar';
 function App() {
   return (
     <BrowserRouter>
-      <Header />
-      <div className='main d-flex'>
-        <div className='sidebarWrapper'>
-          <Sidebar />
-        </div>
-        <div className='content'>
-          <Routes>
-            <Route path="/" exact={true} element={<Dashboard />} />
-          </Routes>
-        </div>
+    <Header/>
+    <div className='main d-flex'>
+      <div className='sidebarWrapper'>
+        <Sidebar/>
       </div>
-
+      <div className='content'>
+    <Routes>
+      <Route path = "/" exact={true} element={<Dashboard/>} />
+    </Routes>
+    </div>
+    </div>
+    
     </BrowserRouter>
   );
 }

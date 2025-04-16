@@ -3,7 +3,7 @@ import { FaUserFriends } from "react-icons/fa";
 import { FaCartArrowDown } from "react-icons/fa";
 import { FaShoppingBag } from "react-icons/fa";
 import { BsStars } from "react-icons/bs";
-
+import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 
 const Dashboard = () => {
     return (
