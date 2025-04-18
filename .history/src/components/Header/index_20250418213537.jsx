@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../../assests/images/logo.jpg";
 import Button from '@mui/material/Button';
 import { MdMenuOpen } from "react-icons/md";
-import { MdOutlineMenu } from "react-icons/md";
+// import { MdOutlineMenu } from "react-icons/md";
 import SearchBox from "../SearchBox";
 import { MdOutlineLightMode } from "react-icons/md";
 // import { MdDarkMode } from "react-icons/md";
@@ -65,12 +65,7 @@ const Header = () => {
                             </Link>
                         </div>
                         <div className="col-sm-3 d-flex align-items-center pl-4">
-                            <Button className="rounded-circle mr-3" onClick={()=>context.setIsToggleSider(!context.isToggleSider)}>
-                            {
-                                context.isToggleSider===false ? <MdMenuOpen/> :
-                                <MdOutlineMenu/>
-                            }
-                            </Button>
+                            <Button className="rounded-circle mr-3" onClick={()=>context.setIsToggleSider(!context.isToggleSider)}><MdMenuOpen /></Button>
                             <SearchBox />
                         </div>
                         <div className="col-sm-7 d-flex align-items-center justify-content-end part3">

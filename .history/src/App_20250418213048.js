@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Dashboard from './pages/Dashboard/Dashboard';
 import Header from "./components/Header/index";
 import Sidebar from './components/Sidebar';
-import { useEffect, useState, createContext } from 'react';
+import { useState } from 'react';
 
 const MyContext = createContext();
 
@@ -17,19 +17,15 @@ function App() {
     setIsToggleSider
 
   }
-
-  // useEffect(() =>{
-  //   alert(isToggleSider)
-  // }, [isToggleSider])
   return (
     <BrowserRouter>
       <MyContext.Provider value={values}>
         <Header />
         <div className='main d-flex'>
-          <div className={`sidebarWrapper ${isToggleSider===true ? 'toggle' : ''}`}>
+          <div className='sidebarWrapper'>
             <Sidebar />
           </div>
-          <div className={`content ${isToggleSider===true ? 'toggle' : ''}`}>
+          <div className='content'>
             <Routes>
               <Route path="/" exact={true} element={<Dashboard />} />
             </Routes>

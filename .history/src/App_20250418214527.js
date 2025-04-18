@@ -18,9 +18,9 @@ function App() {
 
   }
 
-  // useEffect(() =>{
-  //   alert(isToggleSider)
-  // }, [isToggleSider])
+  useEffect(() =>{
+    alert(isToggleSider)
+  }, [isToggleSider])
   return (
     <BrowserRouter>
       <MyContext.Provider value={values}>
@@ -29,7 +29,7 @@ function App() {
           <div className={`sidebarWrapper ${isToggleSider===true ? 'toggle' : ''}`}>
             <Sidebar />
           </div>
-          <div className={`content ${isToggleSider===true ? 'toggle' : ''}`}>
+          <div className='content'>
             <Routes>
               <Route path="/" exact={true} element={<Dashboard />} />
             </Routes>

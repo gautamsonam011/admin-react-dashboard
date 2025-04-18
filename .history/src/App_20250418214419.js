@@ -18,18 +18,18 @@ function App() {
 
   }
 
-  // useEffect(() =>{
-  //   alert(isToggleSider)
-  // }, [isToggleSider])
+  useEffect(() =>{
+    alert(isToggleSider)
+  }, [isToggleSider])
   return (
     <BrowserRouter>
       <MyContext.Provider value={values}>
         <Header />
         <div className='main d-flex'>
-          <div className={`sidebarWrapper ${isToggleSider===true ? 'toggle' : ''}`}>
+          <div className={`sidebarWrapper`}>
             <Sidebar />
           </div>
-          <div className={`content ${isToggleSider===true ? 'toggle' : ''}`}>
+          <div className='content'>
             <Routes>
               <Route path="/" exact={true} element={<Dashboard />} />
             </Routes>

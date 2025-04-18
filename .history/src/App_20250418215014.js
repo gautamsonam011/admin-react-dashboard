@@ -18,9 +18,9 @@ function App() {
 
   }
 
-  // useEffect(() =>{
-  //   alert(isToggleSider)
-  // }, [isToggleSider])
+  useEffect(() =>{
+    alert(isToggleSider)
+  }, [isToggleSider])
   return (
     <BrowserRouter>
       <MyContext.Provider value={values}>

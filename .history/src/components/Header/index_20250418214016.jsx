@@ -65,7 +65,7 @@ const Header = () => {
                             </Link>
                         </div>
                         <div className="col-sm-3 d-flex align-items-center pl-4">
-                            <Button className="rounded-circle mr-3" onClick={()=>context.setIsToggleSider(!context.isToggleSider)}>
+                            <Button className="rounded-circle mr-3" onClick={()=>context.setIsToggleSider(!context.isToggleSider)}><MdMenuOpen />
                             {
                                 context.isToggleSider===false ? <MdMenuOpen/> :
                                 <MdOutlineMenu/>

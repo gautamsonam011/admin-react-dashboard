@@ -56,9 +56,7 @@ header button.rounded-circle:hover svg{color: #2585d4 !important;}
 .main .sidebarWrapper{width: 20%; flex: 0 0 20%; transition: all 0.3s ease-in-out;}
 .main .sidebarWrapper.toggle{width: 0%; flex: 0 0 0%;}
 
-.main .sidebarWrapper .sidebar{width:20%; height: 100vh; max-height: calc(100%-70px); position:fixed; top: 70px; left:0px; background:#b1e4dd; overflow-y: scroll; overflow-x: hidden; padding-bottom: 40px; transition: all 0.3s ease-in-out;}
-.main .sidebarWrapper.toggle .sidebar{left:-100%;}
-
+.main .sidebarWrapper .sidebar{width:20%; height: 100vh; position:fixed; top: 70px; left:0px; background:#b1e4dd; overflow-y: scroll; overflow-x: hidden;}
 .main .sidebarWrapper .sidebar::-webkit-scrollbar-thumb{background: transparent !important; width:3px;}
 .main .sidebarWrapper:hover .sidebar::-webkit-scrollbar{ background:#2585d4; width:3px;}
 .main .sidebarWrapper .sidebar ul{margin-bottom:0px;}
