@@ -42,7 +42,7 @@ function App() {
           </div>
           }
           
-          <div className={`content ${isHideSidebarHeader === true && 'full'} ${isToggleSider===true ? 'toggle' : ''}`}>
+          <div className={`content ${isToggleSider===true ? 'toggle' : ''}`}>
             <Routes>
               <Route path="/" exact={true} element={<Dashboard />} />
               <Route path="/dashboard" exact={true} element={<Dashboard />} />

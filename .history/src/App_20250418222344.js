@@ -4,23 +4,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Dashboard from './pages/Dashboard/Dashboard';
 import Header from "./components/Header/index";
 import Sidebar from './components/Sidebar';
-import { useState, createContext } from 'react';
-import Login from './pages/Login';
+import { useEffect, useState, createContext } from 'react';
 
 const MyContext = createContext();
 
 function App() {
 
   const [isToggleSider, setIsToggleSider] = useState(false);
-  const [isLogin, setIsLogin] = useState(false);
-  const [isHideSidebarHeader, setisHideSidebarHeader] = useState(false);
+
   const values = {
     isToggleSider,
-    setIsToggleSider,
-    isLogin,
-    setIsLogin,
-    isHideSidebarHeader,
-    setisHideSidebarHeader
+    setIsToggleSider
 
   }
 
@@ -30,23 +24,16 @@ function App() {
   return (
     <BrowserRouter>
       <MyContext.Provider value={values}>
-        {
-         isHideSidebarHeader !== true && <Header />
-        }
-        
+        <Header />
         <div className='main d-flex'>
-          {
-            isHideSidebarHeader !== true &&
-            <div className={`sidebarWrapper ${isToggleSider===true ? 'toggle' : ''}`}>
+          <div className={`sidebarWrapper ${isToggleSider===true ? 'toggle' : ''}`}>
             <Sidebar />
           </div>
-          }
-          
-          <div className={`content ${isHideSidebarHeader === true && 'full'} ${isToggleSider===true ? 'toggle' : ''}`}>
+          <div className={`content ${isToggleSider===true ? 'toggle' : ''}`}>
             <Routes>
               <Route path="/" exact={true} element={<Dashboard />} />
               <Route path="/dashboard" exact={true} element={<Dashboard />} />
-              <Route path="/login" exact={true} element={<Login />} />
+              <Route path="/login" exact={true} element={<Dashboard />} />
             </Routes>
           </div>
         </div>

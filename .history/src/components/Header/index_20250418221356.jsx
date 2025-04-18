@@ -49,7 +49,8 @@ const Header = () => {
     const handleClosenotificationsDrop = () => {
         setAnchorElNotification(null);
     };
-    
+
+    const [isLogin, setIsLogin] = useState(false);
 
     return (
         <>
@@ -147,11 +148,9 @@ const Header = () => {
                                 </MenuItem>
                             </Menu>
 
-                            {
-                                context.isLogin !==true ? <Link className='btn-signin' to={'/login'}>Sign In</Link>
-                                :
+                            <Button className='btn-blue'>Sign In</Button>
 
-                                <div className="myAccountWrapper">
+                            <div className="myAccountWrapper">
                                 <Button className="myAccount d-flex align-items-center" onClick={handleOpenMyAccountDropdown}>
                                     <div className="userImg">
                                         <span className="rounded-circle">
@@ -225,9 +224,6 @@ const Header = () => {
                                     </Menu>
                                 </Button>
                             </div>
-
-                            }
-                            
                         </div>
                     </div>
                 </div>

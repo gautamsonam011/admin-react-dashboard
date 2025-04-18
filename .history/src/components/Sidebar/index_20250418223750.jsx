@@ -7,9 +7,9 @@ import { MdOutlineMessage } from "react-icons/md";
 import { IoNotifications } from "react-icons/io5";
 import { MdOutlineSettings } from "react-icons/md";
 import { Link } from 'react-router-dom';
-import React, { useState} from "react";
+import React, {useContext, useState} from "react";
 import { RiLogoutCircleRLine } from "react-icons/ri";
-// import { MyContext } from '../../App';
+import { MyContext } from '../../App';
 
 const Sidebar = () =>{
     const [activeTab, setActiveTab] = useState(0);
