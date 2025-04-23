@@ -7,9 +7,6 @@ import { MdMarkEmailRead } from "react-icons/md";
 import { RiLockPasswordFill } from "react-icons/ri";
 import { FaRegEyeSlash } from "react-icons/fa6";
 import { FaEye } from "react-icons/fa";
-import Button from '@mui/material/Button';
-import { Link } from 'react-router-dom';
-import google from "../../assests/images/google.png";
 
 const Login = () => {
     const context = useContext(MyContext);
@@ -41,26 +38,13 @@ const Login = () => {
                             </div>
                             <div className={`form-group mb-3 position-relative ${inputIndex === 1 && 'focus'}`}>
                                 <span className="icon"><RiLockPasswordFill /></span>
-                                <input type={`${isShowPassword === true ? 'text' : 'password'}`} className='form-control' placeholder='Enter your password' onFocus={() => focusInput(1)} onBlur={() => setInputIndex(null)} />
+                                <input type=`{${isShowPassword === true ? 'text' : 'password'}}` className='form-control' placeholder='Enter your password' onFocus={() => focusInput(1)} onBlur={() => setInputIndex(null)} />
                                 <span className="toggleShowPassword" onClick={() => setisShowPassword(!isShowPassword)}>
                                     {
                                         isShowPassword === true ? <FaEye /> : <FaRegEyeSlash />
                                     }
 
                                 </span>
-                            </div>
-                            <div className='form-group'>
-                                <Button className="btn-lg w-100 btn-big">Sign In</Button>
-                            </div>
-                            <div className='form-group text-center mt-3'>
-                                <Link to={'forgot-password'} className="forgotPassword">Forgot Password</Link>
-                                <div className='d-flex align-items-center justify-content-center or mt-3 mb-3'>
-                                    <span className='line'></span>
-                                    <span className='txt'>or</span>
-                                    <span className='line'></span>
-                                </div>
-
-                                <Button variant="outlined" color="error" className='w-100 btn-lg loginwithGoogle'><img src={google} /> &nbsp; Sign In with Google</Button>
                             </div>
                         </form>
                     </div>

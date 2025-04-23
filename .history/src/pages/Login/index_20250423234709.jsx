@@ -9,7 +9,6 @@ import { FaRegEyeSlash } from "react-icons/fa6";
 import { FaEye } from "react-icons/fa";
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
-import google from "../../assests/images/google.png";
 
 const Login = () => {
     const context = useContext(MyContext);
@@ -60,7 +59,7 @@ const Login = () => {
                                     <span className='line'></span>
                                 </div>
 
-                                <Button variant="outlined" color="error" className='w-100 btn-lg loginwithGoogle'><img src={google} /> &nbsp; Sign In with Google</Button>
+                                <Button variant="outlined" color="error">Sign In with Google</Button>
                             </div>
                         </form>
                     </div>

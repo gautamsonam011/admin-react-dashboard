@@ -60,7 +60,7 @@ const Login = () => {
                                     <span className='line'></span>
                                 </div>
 
-                                <Button variant="outlined" color="error" className='w-100 btn-lg loginwithGoogle'><img src={google} /> &nbsp; Sign In with Google</Button>
+                                <Button variant="outlined" color="error" className='w-100 btn-lg loginwithGoogle'><img src={google} />Sign In with Google</Button>
                             </div>
                         </form>
                     </div>

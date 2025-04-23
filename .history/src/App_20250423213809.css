@@ -117,7 +117,7 @@ position:relative; overflow:hidden;}
 /*  style for Login page */
 
 .loginSection{
-  width: 100%; height: 120hv; padding: 35px 25px;
+  width: 100%; height: 100hv; padding: 35px 25px;
   background:#f4f8f7; position: relative;
 }
 .loginbgimage{width:100%; height: 100%; opacity: 0.4; position: fixed; top: 0; left: 0; z-index: 99; pointer-events: none;}
@@ -126,17 +126,5 @@ position:relative; overflow:hidden;}
 .full{max-width: 100% !important; flex: 0 0 100% !important; width: 100% !important;}
 .loginSection .loginBox .wrapper .form-control{box-shadow: none !important; outline: none !important; padding-left: 40px;}
 .loginSection .loginBox .wrapper .form-control:focus{border: 1px solid #0858f7 !important;}
-.loginSection .loginBox .wrapper .form-group .icon{position: absolute; top: 6px; left: 15px; z-index: 100;}
-.loginSection .loginBox .wrapper .form-group.focus .icon svg{color:#0858f7 !important;}
-.loginSection .loginBox .wrapper .form-group .icon svg{color:#5e5d72;}
-.toggleShowPassword{position: absolute; top: 5px; right: 10px; cursor: pointer;}
-.toggleShowPassword svg{font-size: 22px;}
-.btn-big{padding: 8px 25px !important; background:#0858f7 !important; color:#b1e4dd !important; font-size: 16px !important;}
-.forgotPassword{color: #5e5d72; text-decoration: none;}
-.forgotPassword:hover{color:#0858f7 !important;}
-.loginSection .loginBox .wrapper .link{font-size: 14px;}
-.loginSection .loginBox .wrapper .or span.line{display: block; width: 35%; height: 1px; background: rgba(0, 0, 0, 0.2);}
-.loginSection .loginBox .wrapper .or span.txt{display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 600; width: 50px; height: 50px; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 50%;}
-.loginSection .loginBox .wrapper .form-group{margin-bottom: 12px;}
-.loginwithGoogle{text-transform: capitalize !important; font-weight: bold !important;}
+.loginSection .loginBox .wrapper .form-control .icon{position: absolute; top: 30px; left: 15px; z-index: 100;}
 /* Registration Form */

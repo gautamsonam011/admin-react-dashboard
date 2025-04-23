@@ -8,8 +8,6 @@ import { RiLockPasswordFill } from "react-icons/ri";
 import { FaRegEyeSlash } from "react-icons/fa6";
 import { FaEye } from "react-icons/fa";
 import Button from '@mui/material/Button';
-import { Link } from 'react-router-dom';
-import google from "../../assests/images/google.png";
 
 const Login = () => {
     const context = useContext(MyContext);
@@ -50,17 +48,7 @@ const Login = () => {
                                 </span>
                             </div>
                             <div className='form-group'>
-                                <Button className="btn-lg w-100 btn-big">Sign In</Button>
-                            </div>
-                            <div className='form-group text-center mt-3'>
-                                <Link to={'forgot-password'} className="forgotPassword">Forgot Password</Link>
-                                <div className='d-flex align-items-center justify-content-center or mt-3 mb-3'>
-                                    <span className='line'></span>
-                                    <span className='txt'>or</span>
-                                    <span className='line'></span>
-                                </div>
-
-                                <Button variant="outlined" color="error" className='w-100 btn-lg loginwithGoogle'><img src={google} /> &nbsp; Sign In with Google</Button>
+                                <Button className="btn-blue btn-lg w-100 btn-big">Sign In</Button>
                             </div>
                         </form>
                     </div>
