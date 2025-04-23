@@ -64,11 +64,8 @@ const Login = () => {
                             </div>
                         </form>
                     </div>
-                    <div className='wrapper mt-3 card border p-3 footer'>
-                        <span className='text-center'>
-                            Don't have an account? 
-                            <Link to={'/signUp'} className='link color ml-2'>Register</Link>
-                        </span>
+                    <div className='wrapper mt-3 card border p-3'>
+                        
                     </div>
                 </div>
             </section>

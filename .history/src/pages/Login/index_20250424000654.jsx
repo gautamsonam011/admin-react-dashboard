@@ -64,10 +64,10 @@ const Login = () => {
                             </div>
                         </form>
                     </div>
-                    <div className='wrapper mt-3 card border p-3 footer'>
+                    <div className='wrapper mt-3 card border p-3'>
                         <span className='text-center'>
                             Don't have an account? 
-                            <Link to={'/signUp'} className='link color ml-2'>Register</Link>
+                            <Link to={'/signUp'}>Register</Link>
                         </span>
                     </div>
                 </div>
