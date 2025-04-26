@@ -6,7 +6,6 @@ import Header from "./components/Header/index";
 import Sidebar from './components/Sidebar';
 import { useState, createContext } from 'react';
 import Login from './pages/Login';
-import SignUp from './pages/SignUp';
 
 const MyContext = createContext();
 
