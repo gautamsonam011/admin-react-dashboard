@@ -33,10 +33,8 @@ const SignUp = () => {
             <img src={bgImage} className='loginbgimage' alt="bgimage" />
             <section className="loginSection signupSection">
                 <div className='row'>
-                    <div className='col-md-8 d-flex align-items-center flex-column part1'>
-                        <h1>BEST UX/UI FASHION ECOMMERCE DASHBOARD & ADMIN PANEL</h1>
-
-                        <p>Shopper - E-commerce Store Admin Panel Web UI Kit: This Figma-based UI kit offers a comprehensive set of tools for managing your online store, including order tracking, customer data management, and inventory control. Its user-friendly interface is designed to enhance the shopping experience. ​</p>
+                    <div className='col-md-8 d-flex align-items'>
+                        <h1></h1>
                     </div>
                     <div className='col-md-4 pr-0'>
                         <div className="loginBox">
