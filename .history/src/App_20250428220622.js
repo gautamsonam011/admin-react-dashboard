@@ -15,15 +15,12 @@ function App() {
   const [isToggleSider, setIsToggleSider] = useState(false);
   const [isLogin, setIsLogin] = useState(false);
   const [isHideSidebarHeader, setisHideSidebarHeader] = useState(false);
-  const [themeMode, setThemeMode] = useState('light');
-
+  const [themeMode, setThemeMode] = useSatate('light');
 
   useEffect(()=>{
     document.body.classList.remove('light');
     document.body.classList.remove('dark');
     document.body.classList.add(themeMode);
-
-    localStorage.setItem('themeMode', themeMode);
 
   }, [themeMode]);
 

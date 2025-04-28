@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Dashboard from './pages/Dashboard/Dashboard';
 import Header from "./components/Header/index";
 import Sidebar from './components/Sidebar';
-import { useState, createContext, useEffect } from 'react';
+import { useState, createContext } from 'react';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 
@@ -15,18 +15,13 @@ function App() {
   const [isToggleSider, setIsToggleSider] = useState(false);
   const [isLogin, setIsLogin] = useState(false);
   const [isHideSidebarHeader, setisHideSidebarHeader] = useState(false);
-  const [themeMode, setThemeMode] = useState('light');
-
+  const [themeMode, setThemeMode] = useSatate('light');
 
   useEffect(()=>{
-    document.body.classList.remove('light');
-    document.body.classList.remove('dark');
     document.body.classList.add(themeMode);
 
-    localStorage.setItem('themeMode', themeMode);
-
   }, [themeMode]);
-
+  
   const values = {
     isToggleSider,
     setIsToggleSider,
