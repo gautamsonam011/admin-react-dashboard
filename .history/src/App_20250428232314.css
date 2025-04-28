@@ -5,7 +5,6 @@ body{
   background-color: #f4f8f7;
 
 }
-body.dark{background: #071739 !important;}
 
 header{
   width:100%;
@@ -57,7 +56,7 @@ body.dark .orders{color: rgba(255, 255, 255, 0.8) !important;}
 body.dark #account-menu{color: rgba(255, 255, 255, 0.8) !important;}
 body.dark .main .sidebarWrapper .sidebar{background: #112143 !important;}
 body.dark .main .sidebarWrapper .sidebar ul li button{color:rgba(255, 255, 255, 0.8) !important}
-body.dark .main .sidebarWrapper .sidebar ul li button .icon svg{color:rgba(255, 255, 255, 0.8) !important;}
+body.dark .main .sidebarWrapper .sidebar ul li button .icon{color:rgba(255, 255, 255, 0.8) !important}
 body.dark .main .sidebar ul li button:hover{background: rgba(255, 255, 255, 0.8) !important;}
 #account-menu li{font-size: 14px !important;}
 #account-menu li svg{font-size: 20px !important}
@@ -115,7 +114,7 @@ position:relative; overflow:hidden;}
 .logoutWrapper .logoutBox button{font-size:14px !important; font-weight: 600 !important; }
 .logoutWrapper .logoutBox button svg{margin-right: 15px; font-size:18px;}
 
-body.dark .logoutWrapper .logoutBox{background-image: linear-gradient(#183e8c, #163474) !important; background: transparent;}
+body.dark .logoutWrapper .logoutBox{background: linear-gradient(rgba(var(#183e8c), 25%), rgba(var(#163474), 40%)) !important;}
 
 .main .content{width:80%; flex: 0 0 80%; transition: all 0.3s ease-in-out;}
 .main .content.toggle{width:100%; flex: 0 0 100%;}

@@ -109,7 +109,7 @@ const Header = () => {
                                 transformOrigin={{ horizontal: 'right', vertical: 'top' }}
                                 anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
                             >
-                                <MenuItem onClick={handleClosenotificationsDrop} className='orders'>
+                                <MenuItem onClick={handleClosenotificationsDrop}>
                                     Orders(12)
                                 </MenuItem>
                                 <Divider className="mb-2" />

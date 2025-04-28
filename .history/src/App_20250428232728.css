@@ -5,7 +5,7 @@ body{
   background-color: #f4f8f7;
 
 }
-body.dark{background: #071739 !important;}
+body.dark{background: #071739;}
 
 header{
   width:100%;
@@ -57,7 +57,7 @@ body.dark .orders{color: rgba(255, 255, 255, 0.8) !important;}
 body.dark #account-menu{color: rgba(255, 255, 255, 0.8) !important;}
 body.dark .main .sidebarWrapper .sidebar{background: #112143 !important;}
 body.dark .main .sidebarWrapper .sidebar ul li button{color:rgba(255, 255, 255, 0.8) !important}
-body.dark .main .sidebarWrapper .sidebar ul li button .icon svg{color:rgba(255, 255, 255, 0.8) !important;}
+body.dark .main .sidebarWrapper .sidebar ul li button .icon{color:rgba(255, 255, 255, 0.8) !important}
 body.dark .main .sidebar ul li button:hover{background: rgba(255, 255, 255, 0.8) !important;}
 #account-menu li{font-size: 14px !important;}
 #account-menu li svg{font-size: 20px !important}

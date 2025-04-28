@@ -19,16 +19,16 @@ function App() {
 
 
   useEffect(()=>{
-    if(themeMode === true){
+    if(themeMode === "light"){
       document.body.classList.remove('dark');
-      document.body.classList.add('light');
-      localStorage.setItem('themeMode', 'light');
+      document.body.classList.add(!themeMode);
+      localStorage.setItem('themeMode', !themeMode);
 
     }
     else{
       document.body.classList.remove('light');
-      document.body.classList.add('dark');
-      localStorage.setItem('themeMode', 'dark');
+      document.body.classList.add(!themeMode);
+      localStorage.setItem('themeMode', !themeMode);
     }
     
 
