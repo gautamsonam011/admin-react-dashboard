@@ -2,28 +2,8 @@ import { Breadcrumbs } from "@mui/material"
 import HomeIcon from '@mui/icons-material/Home';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import StyledBreadcrumb from '../../components/StyledBreadcrumb';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select, { SelectChangeEvent } from '@mui/material/Select';
-import Button from '@mui/material/Button';
-import * as React from 'react';
 
 const ProductUpload = () =>{
-    const [age, setAge] = React.useState('');
-    const [open, setOpen] = React.useState(false);
-
-  const handleChange = (event: SelectChangeEvent<typeof age>) => {
-    setAge(event.target.value);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
-
-  const handleOpen = () => {
-    setOpen(true);
-  };
 
     return (
         <div className="right-content w-100 upload-product">
@@ -65,58 +45,10 @@ const ProductUpload = () =>{
                         <div className="form-group mb-4">
                             <div className="row">
                                 <div className="col-sm-6">
-                                <div>
-      <Button sx={{ display: 'block', mt: 2 }} onClick={handleOpen}>
-        Select Category
-      </Button>
-      <FormControl sx={{ m: 1, minWidth: 120 }}>
-        <InputLabel id="demo-controlled-open-select-label">Age</InputLabel>
-        <Select
-          labelId="demo-controlled-open-select-label"
-          id="demo-controlled-open-select"
-          open={open}
-          onClose={handleClose}
-          onOpen={handleOpen}
-          value={age}
-          label="Age"
-          onChange={handleChange}
-        >
-          <MenuItem value="">
-            <em>None</em>
-          </MenuItem>
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
-        </Select>
-      </FormControl>
-    </div>
+
                                 </div>
                                 <div className="col-sm-6">
-                                <div>
-      <Button sx={{ display: 'block', mt: 2 }} onClick={handleOpen}>
-        Select Brand
-      </Button>
-      <FormControl sx={{ m: 1, minWidth: 120 }}>
-        <InputLabel id="demo-controlled-open-select-label">Age</InputLabel>
-        <Select
-          labelId="demo-controlled-open-select-label"
-          id="demo-controlled-open-select"
-          open={open}
-          onClose={handleClose}
-          onOpen={handleOpen}
-          value={age}
-          label="Age"
-          onChange={handleChange}
-        >
-          <MenuItem value="">
-            <em>None</em>
-          </MenuItem>
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
-        </Select>
-      </FormControl>
-    </div>
+                                    
                                 </div>
                             </div>
                         </div>

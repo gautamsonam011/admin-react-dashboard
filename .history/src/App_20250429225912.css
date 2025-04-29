@@ -171,11 +171,5 @@ h1, h2, h3, h4, h5, h6, p{color:#403e57;}
 .signupSection .part1 h1{font-size: 40px; font-weight: bolder;}
 .signupSection .part1 p{ font-size: 18px; font-weight: 600;}
 
-body.dark .upload-product{background: #1b2b4d !important;color: #f0f0f0 !important; }
-body.dark .upload-product .card{background: #1b2b4d !important; color: #f0f0f0 !important;}
-
-.form .form-group{margin-bottom: 25px; font-size: 13px;}
-.form .form-group input, .form .form-group textarea{background: #fafafa; outline:none !important; width:100%; border: 1px solid rgba(0,0,0,0.1) !important; height: 40px; padding-left: 15px; border-radius: 5px;
-font-size: 15px;}
-.form .form-group textarea{height: 120px;}
-body.dark .form .form-group input, body.dark .form .form-group textarea{background: #1b2b4d !important; border: 1px solid #253557 !important; color: rgba(255, 255, 255, 0.8) !important;}
+.form .form-group{margin-bottom: 15px;}
+.form .form-group input{background: #fafafa; outline:none !important; width:100%; border: 1px solid rgba(0,0,0,0.1) !important; height: 40px; padding-left: 15px; border-radius: 5px;}

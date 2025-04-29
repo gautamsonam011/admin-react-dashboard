@@ -67,7 +67,7 @@ const ProductUpload = () =>{
                                 <div className="col-sm-6">
                                 <div>
       <Button sx={{ display: 'block', mt: 2 }} onClick={handleOpen}>
-        Select Category
+        Open the select
       </Button>
       <FormControl sx={{ m: 1, minWidth: 120 }}>
         <InputLabel id="demo-controlled-open-select-label">Age</InputLabel>
@@ -94,7 +94,7 @@ const ProductUpload = () =>{
                                 <div className="col-sm-6">
                                 <div>
       <Button sx={{ display: 'block', mt: 2 }} onClick={handleOpen}>
-        Select Brand
+        Open the select
       </Button>
       <FormControl sx={{ m: 1, minWidth: 120 }}>
         <InputLabel id="demo-controlled-open-select-label">Age</InputLabel>
