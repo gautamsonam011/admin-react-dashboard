@@ -20,6 +20,10 @@ function App() {
   const [isHideSidebarHeader, setisHideSidebarHeader] = useState(false);
   const [themeMode, setThemeMode] = useState(true);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  const handleResize = () => {
+    setWindowWidth(window.innerWidth);
+  };  
   
   useEffect(() => {
     const handleResize = () => {

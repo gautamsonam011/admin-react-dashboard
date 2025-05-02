@@ -1,0 +1,3 @@
+@media only screen and (min-width:320px) and (mx-width: 992px){
+    header .part1, header .part3{padding:0px !important;}
+}

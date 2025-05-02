@@ -55,9 +55,9 @@ const Header = () => {
         <>
             <header>
                 <div className="container-fluid">
-                    <div className="row d-flex align-items-center w-100 flex-row">
+                    <div className="row d-flex align-items-center w-100">
                         {/* logo */}
-                        <div className="col-sm-2 part1">
+                        <div className="col-sm-2">
                             <Link to="/" className="d-flex align-items-center logo">
                                 <img src={logo} alt="logo" />
                                 <span className="ml-2">e.com</span>
@@ -65,7 +65,7 @@ const Header = () => {
                         </div>
                         {
                             context.windowWidth>992 &&
-                            <div className="col-sm-3 d-flex align-items-center pl-4 part2">
+                            <div className="col-sm-3 d-flex align-items-center pl-4">
                             <Button className="rounded-circle mr-3" onClick={()=>context.setIsToggleSider(!context.isToggleSider)}>
                             {
                                 context.isToggleSider===false ? <MdMenuOpen/> :
@@ -78,8 +78,8 @@ const Header = () => {
                         
                         <div className="col-sm-7 d-flex align-items-center justify-content-end part3">
                             <Button className="rounded-circle mr-3" onClick={()=>context.setThemeMode(!context.themeMode)}><MdOutlineLightMode /></Button>
-                            {/* <Button className="rounded-circle mr-3"><FaCartShopping /></Button>
-                            <Button className="rounded-circle mr-3"><MdMarkEmailRead /></Button> */}
+                            <Button className="rounded-circle mr-3"><FaCartShopping /></Button>
+                            <Button className="rounded-circle mr-3"><MdMarkEmailRead /></Button>
                             <Button className="rounded-circle mr-3" onClick={handleOpennotificationsDrop}>
                                 <FaRegBell />
                             </Button>

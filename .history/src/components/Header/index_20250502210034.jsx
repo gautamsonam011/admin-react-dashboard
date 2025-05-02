@@ -78,8 +78,8 @@ const Header = () => {
                         
                         <div className="col-sm-7 d-flex align-items-center justify-content-end part3">
                             <Button className="rounded-circle mr-3" onClick={()=>context.setThemeMode(!context.themeMode)}><MdOutlineLightMode /></Button>
-                            {/* <Button className="rounded-circle mr-3"><FaCartShopping /></Button>
-                            <Button className="rounded-circle mr-3"><MdMarkEmailRead /></Button> */}
+                            <Button className="rounded-circle mr-3"><FaCartShopping /></Button>
+                            <Button className="rounded-circle mr-3"><MdMarkEmailRead /></Button>
                             <Button className="rounded-circle mr-3" onClick={handleOpennotificationsDrop}>
                                 <FaRegBell />
                             </Button>

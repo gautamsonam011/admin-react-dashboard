@@ -19,18 +19,16 @@ function App() {
   const [isLogin, setIsLogin] = useState(false);
   const [isHideSidebarHeader, setisHideSidebarHeader] = useState(false);
   const [themeMode, setThemeMode] = useState(true);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  
-  useEffect(() => {
-    const handleResize = () => {
+
+  useEffect(() =>{
+    const handleResize = () =>{
       setWindowWidth(window.innerWidth);
     };
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
+    window.removeEventListener('resize', handleResize);
+    return () =>{
+      window.removeEventListener('rsize', handleResize);
     };
   }, []);
-  
 
   useEffect(()=>{
     if(themeMode === true){
@@ -57,7 +55,6 @@ function App() {
     setisHideSidebarHeader,
     themeMode,
     setThemeMode,
-    windowWidth,
 
   }
 
